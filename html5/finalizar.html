@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Camisas de Outro Mundo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="imagens/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <img class="imgLogo" src="imagens/LogoCOM_Topo.png" alt="logo">
+    </header>
+    <nav>
+        <ul class="menu">
+            <li class="botao"><a href="com.html">inicial</a></li>
+            <li class="botao"><a href="mascaras.html">mascaras</a></li>
+            <li class="botao"><a href="camisas.html">camisas</a></li>
+            <li class="botao"><a href="compras.html">compras</a></li>            
+        </ul>
+    </nav>
+    <section class="container">
+
+        <form method="POST" action="">
+            <div class="divCompras">
+    
+                <fieldset>
+                    <legend>Identificação</legend>
+
+                    <div class="divLinha">
+                        <label class="colPri" for="nome">Nome:</label>
+                        <input class="inpGrande" type="text" id="nome" name="nome">
+                    </div>
+                    <div class="divLinha">
+                        <label class="colPri" for="email">Email:</label>
+                        <input class="inpGrande" type="email" id="email" name="email">
+                    </div>
+
+                    <fieldset class="fsDir">
+                        <legend>Genero:</legend>
+                        <input type="radio" id="masculino" name="genero" checked>
+                        <label for="masculino">Mas</label>
+
+                        <input type="radio" id="feminino" name="genero">
+                        <label for="feminino">Fem</label>
+
+                        <input type="radio" id="outro" name="genero">
+                        <label for="outro">Outro</label>          
+                    </fieldset>
+
+                    <div class="divLinha">
+                        <label class="colPri" for="endereco">Endereço:</label>
+                        <textarea class="impEnder" id="endereco"></textarea>
+                    </div>
+
+                    <fieldset class="fsDir radio">
+                        <legend>Nascimento:</legend>
+                        <input class="numDD" type="number" name="diaNasc"
+                        min="1" max="31"> /
+                        <input class="numDD" type="number" name="mesNasc"
+                        min="1" max="12"> /
+                        <input class="numQD" type="number" name="anoNasc"
+                        min="1900" max="2003" value="1980">                  
+                    </fieldset>
+                    
+                    <div class="divLinha">
+                        <label class="colPri" for="telefone">Telefone:</label>
+                        <input class="impTelf" type="text" id="telefone" name="telefone">
+                    </div>
+                    <div class="divLinha">
+                        <label class="colPri" for="celular">Celular:</label>
+                        <input class="impTelf" type="text" id="celular" name="celular">
+                    </div>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Pagamento</legend>
+
+                        <fieldset class="colPriPag">
+                            <legend>Cartão</legend>
+                            <fieldset class="radio">
+                                <legend>Bandeira</legend>
+                                <input type="radio" value="visa">
+                                <label for="visa">Visa</label>
+                                <input type="radio" value="master">
+                                <label for="master">Master</label>
+                                <input type="radio" value="elo">
+                                <label for="Elo">Elo</label>
+                            </fieldset>
+   
+                            <div class="divLinha doubleMargin">
+                                <label class="colPriCompras" for="validade">Validade:</label>
+                                <input class="numDD" type="number" min="1" max="12"> /
+                                <input class="numQD" type="number" min="2021" max="9999">
+                            </div>
+          
+                            <div class="divLinha doubleMargin">
+                                <label class="colPriCompras" for="numCard">Número:</label>
+                                <input class="impNCC" type="text" id="numCard" name="numCard">
+                            </div>
+                        </fieldset>
+
+                        <textarea class="comprasFeitas" readonly></textarea>
+
+                        <div class="divLinha elemDir doubleMargin">
+                            <label for="total">Total R$</label>
+                            <input class="impMedio"  type="text" id="total" name="total" readonly>
+                        </div>
+                </fieldset>
+
+                <div class="botoes">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+                
+            </div>
+        </form>
+
+    </section>
+
+    <footer>
+        <address class="ender">Via Lactea, 1234 / Tel: (21) 98765-4321 / <a href="mailto:contato@camplanetas.com.br">contato@camplanetas.com.br</a></address>
+    </footer>
+
+</body>
+</html>
