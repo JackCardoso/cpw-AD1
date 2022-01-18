@@ -1,0 +1,16 @@
+AD2 2021.1- CONSTRUÇÃO DE PÁGINA WEB
+
+Aluno: Jackson Cardoso de Oliveira
+Matricula: 20213050225
+Polo: Nova Iguaçu
+
+/*************************************************/
+
+* Nesta pasta encontram-se as resoluções das QUESTÕES
+
+/**************************************************
+******************* Observações *******************
+**************************************************/
+Os sites foram desenvolvidos com base na visualização apresentada pelo navegador Mozilla Firefox e microsoft Edge Dev no sistema operacional Ubuntu 21.04.
+
+As questões foram resolvidas seguindo a linha de boas práticas para uso do javascript onde é aconselhavel separar o javascript do HTML, o que possibilita uma maior reutilização de código e dimunui a necessidade do desemvolvedor ficar modificando o arquivo .html

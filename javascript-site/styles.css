@@ -1,0 +1,322 @@
+/*********************************************
+Curso de Tecnologia em Sistemas de Computação
+Disciplina Construção de Páginas WEB
+AD2 1° semestre de 2021.
+Aluno: Jackson Cardoso de Oliveira
+*********************************************/
+
+@font-face {
+	font-family: 'Muli';
+	src: url(fonts/Muli-Regular.ttf)
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #551177;
+    color: #FFFF00;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    padding: 10px;
+    max-width: 670px; 
+    /* Largura horizontal da imagem de apresentação da loja
+     localizada na página inicial com.html foi utilizado para 
+     facilitar a visualização do site para ficar de forma parecida
+     com a imagem disponibiliazada no PDF*/
+}
+a{
+    text-decoration: none;
+    color: #FFFF00;
+}
+a:visited{
+    color: #EEEE00;
+}
+header{
+    display: block;
+    text-align: center;
+}
+nav{
+    display: block;
+    border-bottom: 2px solid;
+    padding: 4px;
+    margin: 2px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Muli', sans-serif;
+}
+nav > .menu{
+    margin: 1px auto;
+}
+nav > .menu > .botao{
+    display: inline-block;
+    width: 120px;
+    margin: 0 4px;
+    padding: 0 4px;
+}
+section{
+    display: block;
+    margin: 0 auto;
+}
+footer{
+    clear: both;
+}
+
+.imgLogo{
+    margin: 0 auto 4px auto;
+    padding-bottom: 4px;
+}
+.container h3{
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+.apres{
+    text-align: center;
+    font-size: 18px;
+}
+.ender{
+    text-align: center;
+    font-size: 14px;
+    border-top: 2px solid ;
+    padding: 10px;
+    margin-top: 10px;
+}
+.janInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.janInfo >  button{
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: thin solid;
+}
+
+.imgMasc{  
+    border: 4px solid orange;
+    margin: 10px auto;
+    display: block;
+}
+/* AD2 */
+.imgCorMasc{
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    border: 2px solid orange;
+}
+
+.lisDescricao{
+    color: #FFFF00;
+    font-size: 18px;
+    list-style: square;
+    margin: 10px;
+    padding-left: 20px;
+}
+.lisCarac{
+    font-size: 16px;
+    list-style: url(imagens/Seta18.png) inside;
+}
+.lisCarac li{
+    padding: 10px 10px 10px 0;
+    margin-top: 10px;
+}
+
+/* AD 2 */
+.colMenu{
+    width: 120px;
+    padding: 0 !important;
+}
+.colMenu > ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.colMenu > ul > li{
+    border-bottom: 3px solid #77CCDD;
+    padding: 10px 0;
+    text-align: center;
+}
+.colMenu > ul > li:last-child{
+    border-bottom: 0;
+}
+.colMenu > ul > li > a:link{
+    font-weight: bold;
+
+    color: #005599;
+}
+.colMenu > ul > li > a:visited{
+    font-weight: bold;
+    color: #005599;
+}
+.imgCel{
+    text-align: center;
+    background-color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+}
+.imgCel p{
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+}
+
+
+.tabInfo{
+    border: thin solid;
+    border-collapse: collapse;
+    background-color: #FFFFCC;
+    color: #2255AA;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+.tabInfo td, .tabInfo th{
+    border: 3px solid #77CCDD;
+    padding: 6px 6px 4px 6px;
+    text-align: center;
+}
+.tabInfo .linTH{
+    color: #FFFFFF;
+    background-color: #0099DD;
+    text-align: center;
+}
+.tabInfo .colTH{
+    color: #005599;
+    background-color: #FFFFFF;
+    width: 104px;
+    text-align: center;
+}
+.tabInfo img{
+    width: 250px;
+    height: 312px;
+}
+.tabInterna{
+    width: 100%;
+}
+.tabInterna th{
+    width: 50%;
+    border-spacing: 10px;
+}
+.tabInterna img{
+    width: 30px;
+    height: 30px;
+}
+
+.divCompras{
+    color: #2255AA;
+    background-color: #EEEEAA;
+    padding: 6px 6px 15px 6px;
+    margin: 20px auto;
+    border: 2px solid #77CCDD;
+    width: 560px;
+    position: relative;
+}
+.listaCompras{
+    width: 230px;
+    height: 230px;
+    float: right;
+    margin: 8px 0 0 10px;
+}
+.colLabSelProd{
+    float: left;
+    width: 260px;
+    height: 40px;
+}
+.colSelProd{
+    width: 160px;
+    float: right;
+}
+.linhaProdSel{
+    width: 250px;
+    margin-bottom: 6px;
+    float: left;
+}
+.elemEsq{
+    float: left;
+    display: block;
+}
+.elemDir{
+    float: right;
+    display: block;
+}
+.impMedio{
+    width: 80px;
+}
+.botoes{
+    text-align: right;
+    margin: 20px 10px 0px 10px;
+}
+.botoes input[type=submit], 
+.botoes input[type=reset]{
+    padding: 4px 14px;
+}
+.divCompras input{
+    padding: 4px;
+    border-radius: 4px;
+    border: thin solid;
+} 
+.divCompras fieldset{
+    padding: 10px;
+}
+.radio{
+   display: flex; 
+   justify-content: space-around;
+}
+
+.fsEsq{
+    float: left;
+    display: inline;
+}
+.fsDir{
+    float: right;
+    display: inline;
+}
+.inpGrande{
+    width: 400px;
+}
+.impNCC{
+    width: 130px;
+}
+.impTelf{
+    width: 90px;
+}
+.impEnder{
+    width: 200px;
+    height: 60px;
+}
+.numDD{
+    width: 30px;
+}
+.numQD{
+    width: 50px;
+}
+.divLinha{
+    margin-bottom: 6px;
+}
+.colPri{
+    float: left;
+    width: 90px;
+}
+.colPriCompras{
+    float: left;
+    width: 86px;
+}
+.comprasFeitas{
+    width: 230px;
+    height: 180px;
+    float: right;
+    margin: 8px 0 0 10px;
+}
+.colPriPag{
+    width: 250px;
+    float: left;
+    display: block;
+}
+.doubleMargin{
+    margin-top: 20px;
+}
